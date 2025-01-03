@@ -1,0 +1,57 @@
+body{
+	background-color: #f5f0e1;
+}
+
+
+h1 {
+	text-align: center;
+}
+h2 {
+	text-align: center;
+	font-style: italic;
+	color: rgb(60,60,60);
+}
+
+
+
+.pugo {
+	display: block; 
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+	height: 30%;
+	position: relative; /* Make this the positioning context for its children */
+    overflow: hidden;
+	border-radius: 20px;
+	filter: drop-shadow(30px 10px 4px lightblue);
+	
+}
+
+.pugo-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .5s ease;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.container:hover .pugo-overlay {
+    height: 100%; /* Expands only within the bounds of the picture */
+}
+
+.wolf {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
